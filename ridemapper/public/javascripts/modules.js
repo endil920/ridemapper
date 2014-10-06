@@ -1,1 +1,1 @@
-var rideMapper = angular.module ('ridemapper');
+var rideMapper = angular.module ('ridemapper', []);
