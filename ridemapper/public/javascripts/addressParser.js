@@ -1,7 +1,8 @@
 function callIsValid(){
-	var address = document.getElementByID('address');
-	var city = document.getElementByID('city');
-	var state = document.getElementByID('state');
-	var zip = document.getElementByID('zip');
+	console.log(document);
+	var address = document.getElementById('address');
+	var city = document.getElementById('city');
+	var state = document.getElementById('state');
+	var zip = document.getElementById('zip');
 	$http.get("isValid");
 }
