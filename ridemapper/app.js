@@ -2,6 +2,7 @@
 /**
  * Module dependencies.
  */
+var add_fun = require('./address_functions');
 var fs = require('fs');
 var express = require('express');
 var routes = require('./routes');
@@ -31,7 +32,10 @@ app.get('/', function(request, response) {
   var msgBuf = fs.readFileSync('public/rideMapperForm.html');
   var msg = msgBuf.toString('utf8');
   response.send(msg);
-
+});
+app.get('/isValid', function(request, response) {
+	add_fun.isValid();
+	response.end();
 });
 app.get('/users', user.list);
 
