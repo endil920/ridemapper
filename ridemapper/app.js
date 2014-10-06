@@ -28,7 +28,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', function(request, response) {
-  var msgBuf = fs.readFileSync('ridemapperform.html');
+  var msgBuf = fs.readFileSync('public/rideMapperForm.html');
   var msg = msgBuf.toString('utf8');
   response.send(msg);
 
